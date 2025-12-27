@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elf vs Santa: One Minute Mayhem</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="frame">
+    <header class="hud">
+      <div class="hud__left">
+        <h1>Elf vs Santa</h1>
+        <p>Survive the blizzard. One Santa at a time.</p>
+      </div>
+      <div class="hud__right">
+        <div class="stat">
+          <span>Survival</span>
+          <strong id="time">0.0</strong>
+        </div>
+        <div class="stat">
+          <span>Kills</span>
+          <strong id="kills">0</strong>
+        </div>
+        <button id="start" class="cta">Start</button>
+      </div>
+    </header>
+
+    <main class="stage">
+      <canvas id="game" width="960" height="540" aria-label="Top down shooter"></canvas>
+      <div class="overlay" id="overlay">
+        <div class="panel">
+          <h2 id="overlayTitle">Blizzard Countdown</h2>
+          <p id="overlayBody">Move with WASD or arrow keys. Aim with your mouse. Click to shoot.</p>
+          <p id="overlayHint">Every Santa gets faster and more evasive. If one reaches you, it's over.</p>
+          <button id="startOverlay" class="cta">Enter the Storm</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="tips">
+      <span>Tip: Keep moving to dodge erratic charges.</span>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
